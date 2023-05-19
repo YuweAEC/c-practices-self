@@ -40,7 +40,7 @@ void main()
     b=add10(a);
     b=add10(add5(30));
     printf(b); // output is
-    printf("Value in t=%d", *t);
+    printf("Value in t=%dz", *t);
     printf(add10(add5(b)));
     printf(add15(25));
     printf(add10(add5)); // > type mismatch
