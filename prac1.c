@@ -59,8 +59,8 @@ void main()
               5 => add10(add5(25)) > add10(30) > 40
       add15(25) > 40 
 
-*/
-/*
+
  *to wirte a new code with add10 calling another func add5
  and to make a new func add(10+5) and return  its value inside add10
 */
+
