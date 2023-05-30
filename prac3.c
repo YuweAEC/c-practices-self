@@ -38,5 +38,5 @@ int main()
 
 /**
  * 28 -> take 30 marks input from the user
- *
+ * 29 -> display the avg of the marks
  */
