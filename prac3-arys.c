@@ -32,7 +32,8 @@ int main()
     
     for (i = 0; i <= 3; i++)
         sum = sum + marks[i]; /* read data from an array*/
-    avg = sum / 4;
+        avg = sum / 4;
+
     printf("\nAverage marks = %d", avg);
 }
 
@@ -40,3 +41,4 @@ int main()
  * 28 -> take 4 marks input from the user
  * 29 -> display the avg of the marks taken
  */
+
