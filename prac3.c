@@ -32,7 +32,7 @@ int main()
     
     for (i = 0; i <= 29; i++)
         sum = sum + marks[i]; /* read data from an array*/
-        avg = sum / 30;
+    avg = sum / 30;
     printf("\nAverage marks = %d", avg);
 }
 
