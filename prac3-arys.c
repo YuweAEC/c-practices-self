@@ -22,17 +22,17 @@ int main()
 {
     int avg, sum = 0;
     int i;
-    int marks[5]; /* array declaration */
+    int marks[4]; /* array declaration */
     
-    for (i = 0; i <= 4; i++)
+    for (i = 0; i <= 3; i++)
     {
         printf("\nEnter marks ");
         scanf("%d", &marks[i]); /* store data in array */
     }
     
-    for (i = 0; i <= 4; i++)
+    for (i = 0; i <= 3; i++)
         sum = sum + marks[i]; /* read data from an array*/
-    avg = sum / 5;
+    avg = sum / 4;
     printf("\nAverage marks = %d", avg);
 }
 
