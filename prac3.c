@@ -37,5 +37,6 @@ int main()
 }
 
 /**
- * 28 ->
-*/
+ * 28 -> take 30 marks input from the user
+ *
+ */
