@@ -81,7 +81,7 @@ int main()
     printF("\n SUm= %d", sum);      
 } 
 
-calsum(x, y, z)
+void calsum(x, y, z)
 int x, y, x;
 {
     int d;
@@ -89,3 +89,4 @@ int x, y, x;
     d=X+y+z;
     return(d);
 }
+
