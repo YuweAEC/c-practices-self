@@ -78,5 +78,14 @@ int main()
 
     sum = calsum(a, b, c);
 
-    printF("\n SUm= %d", sum);
+    printF("\n SUm= %d", sum);      
 } 
+
+calsum(x, y, z)
+int x, y, x;
+{
+    int d;
+
+    d=X+y+z;
+    return(d);
+}
