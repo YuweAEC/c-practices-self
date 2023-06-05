@@ -64,4 +64,8 @@ void main()
  and to make a new func add(10+5) and return  its value inside add10
 */
 
+// sending and receiving values between the functions
+
+#include<stdio.h>
+#include<conio.h>
  
