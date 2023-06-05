@@ -69,7 +69,7 @@
 #include<stdio.h>
 #include<conio.h>
 
-main()
+int main()
 {
     int a, b, c, sum;
 
@@ -81,7 +81,7 @@ main()
     printf("\n Sum= %d", sum);      
 } 
 
-calsum(x, y, z)
+int calsum(x, y, z)
 int x, y, z;
 {
     int d;
