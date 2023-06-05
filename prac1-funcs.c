@@ -1,52 +1,52 @@
-#include<stdio.h>
-#include<conio.h>
+// #include<stdio.h>
+// #include<conio.h>
 
-int add15(int x){
-    return add10(add5(x));
-}
+// int add15(int x){
+//     return add10(add5(x));
+// }
 
-int add5(int y){
-    return y+=5;
-}
+// int add5(int y){
+//     return y+=5;
+// }
 
-int add10(int x){  // func defination
-    return x+=10;
-}
+// int add10(int x){  // func defination
+//     return x+=10;
+// }
 
-void practice(int a)
-{
-    if (a >= 60)
-    {
-        printf("Pass\n");
-    }
-    else
-    {
-        printf("fail\n");
-    }
-}
-void main()
-{
-    int a,b,t;
-    t=&b;
+// void practice(int a)
+// {
+//     if (a >= 60)
+//     {
+//         printf("Pass\n");
+//     }
+//     else
+//     {
+//         printf("fail\n");
+//     }
+// }
+// void main()
+// {
+//     int a,b,t;
+//     t=&b;
     
-    printf(a);//  printf("%d\n", &a);
-    printf("Enter a number/marks:-");
-    scanf("%d", &a);
+//     printf(a);//  printf("%d\n", &a);
+//     printf("Enter a number/marks:-");
+//     scanf("%d", &a);
 
-    printf("\n Address of a=%u", &a);
-    printf("\n Address of b=%u", &b);
+//     printf("\n Address of a=%u", &a);
+//     printf("\n Address of b=%u", &b);
 
-    practice(a); // func invocation or calling a func
-    b=add10(a);
-    b=add10(add5(30));
-    printf(b); // output is
-    printf("Value in t=%dz", *t);
-    printf(add10(add5(b)));
-    printf(add15(25));
-    printf(add10(add5)); // > type mismatch
-    printf("\n Address of a=%u", &a);
-    printf("\n Address of b=%u", &b);
-}
+//     practice(a); // func invocation or calling a func
+//     b=add10(a);
+//     b=add10(add5(30));
+//     printf(b); // output is
+//     printf("Value in t=%dz", *t);
+//     printf(add10(add5(b)));
+//     printf(add15(25));
+//     printf(add10(add5)); // > type mismatch
+//     printf("\n Address of a=%u", &a);
+//     printf("\n Address of b=%u", &b);
+// }
 
 /*
 30 => a = 7
