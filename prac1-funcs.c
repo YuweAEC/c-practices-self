@@ -68,4 +68,15 @@
 
 #include<stdio.h>
 #include<conio.h>
- 
+
+int main()
+{
+    int a, b, c, sum;
+
+    printf("\n Enter any three numbers :-");
+    scanf("%d %d %d", &a, &b, &c);
+
+    sum = calsum(a, b, c);
+
+    printF("\n SUm= %d", sum);
+} 
