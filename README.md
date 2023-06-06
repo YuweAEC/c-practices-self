@@ -1,6 +1,6 @@
 # C Prac File
 
- - introduction
- - title
- - authors
- - acknowledgements
+ - Introduction
+ - Title
+ - Authors
+ - Acknowledgements
