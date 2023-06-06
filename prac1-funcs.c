@@ -70,14 +70,6 @@
 #include<stdio.h>
 #include<conio.h>
 
-int calsum(x, y, z)
-int x, y, z;
-{
-    int d;
-
-    d= x+y+z;
-    return(d);
-}
 
 int main()
 {
@@ -91,3 +83,11 @@ int main()
     printf("\n Sum= %d", sum);      
 } 
 
+int calsum(x, y, z)
+int x, y, z;
+{
+    int d;
+
+    d= x+y+z;
+    return(d);
+}
