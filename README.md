@@ -7,8 +7,14 @@
 
 ## Introduction
 
+
+
 ## Title
 
-## Authora
+## Authors
+
+ - Yuvraj Singh
 
 ## Acknowledgements
+
+ - **Gaurav Singh**
