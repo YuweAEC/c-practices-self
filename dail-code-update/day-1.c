@@ -6,7 +6,7 @@ void main()
     
     while(x>=0)
     {
-        if(x==)
+        if(x==y)
             break;
         else
             printf("\n %d %d", x, y);
