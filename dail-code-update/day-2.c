@@ -1,5 +1,5 @@
 //groos salary
-
+/*
 #include<stdio.h>
 #include<conio.h>
 
@@ -26,3 +26,9 @@ int main()
     printf("gross salary=Rs. %f", gs);
     
 }
+*/
+// nested if else using logical operators
+
+#include <stdio.h>
+#include <conio.h>
+
