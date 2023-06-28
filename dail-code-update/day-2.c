@@ -62,10 +62,8 @@ int main()
             else
             {
                 printf("fail");
-            }
-            
-        }
-        
+            }   
+        }  
     }
 }
 
