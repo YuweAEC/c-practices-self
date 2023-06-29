@@ -71,6 +71,21 @@
 #include<stdio.h>
 #include<conio.h>
 
+int isEven(int num);
+void nestloop(int rows, int cols); 
+void getUserInput(int *rows, int *cols);
+
+int main()
+{
+    int rows, cols;
+
+    getUserInput(&rows, &cols);
+
+    nestloop(rows, cols);
+
+    return 0;
+}
+
 // Function to check if a number is even or odd
 
 int isEven(int num)
@@ -87,7 +102,7 @@ int isEven(int num)
 
 // Function to perform a nested loop and if-else logic
 
-void nestedLoopWithIfElse(int rows, int cols)
+void nestloop(int rows, int cols)
 {
     for (int i = 1; i <= rows; i++)
     {
@@ -118,16 +133,5 @@ void getUserInput(int *rows, int *cols)
 
     printf("Enter the number of columns: ");
     scanf("%d", cols);
-}
-
-int main()
-{
-    int rows, cols;
-
-    getUserInput(&rows, &cols);
-
-    nestedLoopWithIfElse(rows, cols);
-
-    return 0;
 }
 
