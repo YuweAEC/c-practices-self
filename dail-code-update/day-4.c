@@ -73,13 +73,13 @@
 
 int isEven(int num);
 void nestloop(int rows, int cols); 
-void getUserInput(int *rows, int *cols);
+void userinput(int *rows, int *cols);
 
 int main()
 {
     int rows, cols;
 
-    getUserInput(&rows, &cols);
+    userinput(&rows, &cols);
 
     nestloop(rows, cols);
 
@@ -126,7 +126,7 @@ void nestloop(int rows, int cols)
 
 // Function to get user input for number of rows and columns
 
-void getUserInput(int *rows, int *cols)
+void userinput(int *rows, int *cols)
 {
     printf("Enter the number of rows: ");
     scanf("%d", rows);
