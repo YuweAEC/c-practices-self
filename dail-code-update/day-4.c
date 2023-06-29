@@ -68,3 +68,66 @@
 //     return 0;
 // }
 
+#include<stdio.h>
+#include<conio.h>
+
+// Function to check if a number is even or odd
+
+int isEven(int num)
+{
+    if (num % 2 == 0)
+    {
+        return 1; // Even
+    }
+    else
+    {
+        return 0; // Odd
+    }
+}
+
+// Function to perform a nested loop and if-else logic
+
+void nestedLoopWithIfElse(int rows, int cols)
+{
+    for (int i = 1; i <= rows; i++)
+    {
+        for (int j = 1; j <= cols; j++)
+        {
+            if (isEven(i) && isEven(j))
+            {
+                printf("(%d, %d) - Even\n", i, j);
+            }
+            else if (!isEven(i) && !isEven(j))
+            {
+                printf("(%d, %d) - Odd\n", i, j);
+            }
+            else
+            {
+                printf("(%d, %d)\n", i, j);
+            }
+        }
+    }
+}
+
+// Function to get user input for number of rows and columns
+
+void getUserInput(int *rows, int *cols)
+{
+    printf("Enter the number of rows: ");
+    scanf("%d", rows);
+
+    printf("Enter the number of columns: ");
+    scanf("%d", cols);
+}
+
+int main()
+{
+    int rows, cols;
+
+    getUserInput(&rows, &cols);
+
+    nestedLoopWithIfElse(rows, cols);
+
+    return 0;
+}
+
