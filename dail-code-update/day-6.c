@@ -1,3 +1,6 @@
+#include<stdio.h>
+#include<conio.h>
+
 int main()
 {
     int array[] = {3, 5, 1, 4, 6, 2};
@@ -24,6 +27,5 @@ int main()
             }
         }
     }
-
     printf("%d", array[3]);
 }
