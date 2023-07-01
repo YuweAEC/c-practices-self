@@ -1,35 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 
-// int main()
-// {
-//     int array[] = {3, 5, 1, 4, 6, 2};
-//     int done = 0;
-//     int i;
-
-//     while (done == 0)
-//     {
-//         done = 1;
-//         for (i = 0; i <= 4; i++)
-//         {
-//             if (array[i] < array[i + 1])
-//             {
-//                 swap(&array[i], &array[i + 1]);
-//                 done = 0;
-//             }
-//         }
-//         for (i = 5; i >= 1; i--)
-//         {
-//             if (array[i] > array[i - 1])
-//             {
-//                 swap(&array[i], &array[i - 1]);
-//                 done = 0;
-//             }
-//         }
-//     }
-//     printf("%d", array[3]);
-// }
-
+// Function to swap two elements
 void swap(int *a, int *b)
 {
     int temp = *a;
@@ -37,33 +9,35 @@ void swap(int *a, int *b)
     *b = temp;
 }
 
-int main()
+// Function to perform array sorting using bubble sort
+void bubbleSort(int arr[], int n)
 {
-    int array[] = {3, 5, 1, 4, 6, 2};
-    int done = 0;
-    int i;
-
-    while (done == 0)
+    int i, j;
+    for (i = 0; i < n - 1; i++)
     {
-        done = 1;
-        for (i = 0; i <= 4; i++)
+        for (j = 0; j < n - i - 1; j++)
         {
-            if (array[i] < array[i + 1])
+            if (arr[j] > arr[j + 1])
             {
-                swap(&array[i], &array[i + 1]);
-                done = 0;
-            }
-        }
-        for (i = 5; i >= 1; i--)
-        {
-            if (array[i] > array[i - 1])
-            {
-                swap(&array[i], &array[i - 1]);
-                done = 0;
+                swap(&arr[j], &arr[j + 1]);
             }
         }
     }
-    printf("%d", array[3]);
+}
+
+// Main function
+int main()
+{
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    bubbleSort(arr, n);
+
+    printf("Sorted array: \n");
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
 
     return 0;
 }
