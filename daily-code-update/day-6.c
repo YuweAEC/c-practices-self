@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
+
 void swap(int *a, int *b);
 void bubbleSort(int arr[], int n);
 
@@ -20,14 +21,6 @@ int main()
     return 0;
 }
 
-// Function to swap two elements
-void swap(int *a, int *b)
-{
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
 // Function to perform array sorting using bubble sort
 void bubbleSort(int arr[], int n)
 {
@@ -43,3 +36,12 @@ void bubbleSort(int arr[], int n)
         }
     }
 }
+
+// Function to swap two elements
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
