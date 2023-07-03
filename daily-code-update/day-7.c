@@ -8,14 +8,15 @@ int add5(int);
 
 void main()
 {
-    int x;
+    int x,y;
     printf("%d",UPPER);
 
     PRINTNAME;
 
     x=add5(5);
-    printf("\n%d",x);
-
+    y=add5(100);
+    printf("\n%d", x);
+    printf("\n%d", y);
 }
 
 int add5(int a) {return a+5;}
