@@ -1,7 +1,7 @@
 
 #include<stdio.h>
 #include<conio.h>
-
+# 
 void nestedLoopWithIfElse(int rows, int cols);
 
 int main()
@@ -33,11 +33,6 @@ void nestedLoopWithIfElse(int rows, int cols)
             {
                 printf("(%d, %d) - Odd\n", i, j);
             }
-            else
-            {
-                printf("(%d, %d)\n", i, j);
-            }
         }
     }
 }
-
