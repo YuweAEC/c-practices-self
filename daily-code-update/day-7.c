@@ -2,7 +2,7 @@
 #include<conio.h>
 #define UPPER 50
 #define PRINTNAME printf("\nYuvi");
-#define ADD5 
+#define ADD5(int) { return a + 5};
 
 int add5(int);
 
@@ -18,7 +18,4 @@ void main()
 
 }
 
-int add5(int a)
-{
-    return a+5;
-}
+int add5(int a) {return a+5;}
