@@ -14,14 +14,25 @@
 //         printf("\nIn front of the maintenance man");
 // }
 
-#define AND &&
-#define ARANGE (a > 25 AND a < 50)
+// #define AND &&
+// #define ARANGE (a > 25 AND a < 50)
+
+// void main()
+// {
+//     int a = 30;
+//     if (ARANGE)
+//         printf("within range");
+//     else
+//         printf("out of range");
+// }
+
+#define FOUND printf("The Yankee Doodle Virus");
 
 void main()
 {
-    int a = 30;
-    if (ARANGE)
-        printf("within range");
+    char signature;
+    if (signature == 'Y')
+        FOUND
     else
-        printf("out of range");
+        printf("Safe... as yet !");
 }
