@@ -5,7 +5,6 @@
 #define ADD5(int) { return a + 5};
 
 int add5(int);
-
 void main()
 {
     int x,y;
@@ -20,3 +19,4 @@ void main()
 }
 
 int add5(int a) {return a+5;}
+
