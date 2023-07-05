@@ -42,7 +42,7 @@ void func3()
 {
     int a = 30;
     if (ARANGE)
-        printf("within range");
+        printf("\nwithin range");
     else
         printf("out of range");
 }
@@ -53,7 +53,7 @@ void func4()
     if (signature == 'Y')
         FOUND
     else
-        printf("Safe... as yet !");
+        printf("\nSafe... as yet !");
 }
 
 void main()
@@ -63,3 +63,4 @@ void main()
     func3();
     func4();
 }
+
