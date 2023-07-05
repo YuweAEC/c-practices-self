@@ -11,7 +11,7 @@
 
 int add5(int);
 
-void main()
+void func1()
 {
     int x, y;
     printf("%d", UPPER);
@@ -26,7 +26,7 @@ void main()
 
 int add5(int a) { return a + 5; }
 
-void main()
+void func2()
 {
     int f = 1, x = 4, y = 90;
 
@@ -38,7 +38,7 @@ void main()
 }
 
 
-void main()
+void func3()
 {
     int a = 30;
     if (ARANGE)
@@ -47,7 +47,7 @@ void main()
         printf("out of range");
 }
 
-void main()
+void func4()
 {
     char signature;
     if (signature == 'Y')
@@ -56,3 +56,7 @@ void main()
         printf("Safe... as yet !");
 }
 
+void main()
+{
+
+}
