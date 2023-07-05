@@ -5,9 +5,21 @@
 #define ADD5(int) {return a + 5};
 #define AND &&
 #define OR ||
-#define AND &&
 #define ARANGE (a > 25 AND a < 50)
 #define FOUND printf("The Yankee Doodle Virus");
+
+void func1();
+void func2();
+void func3();
+void func4();
+
+void main()
+{
+    func1();
+    func2();
+    func3();
+    func4();
+}
 
 int add5(int);
 
@@ -56,11 +68,4 @@ void func4()
         printf("\nSafe... as yet !");
 }
 
-void main()
-{
-    func1();
-    func2();
-    func3();
-    func4();
-}
 
