@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 #define UPPER 50
-#define PRINTNAME printf("\nYuvi");
+#define PRINTNAME printf("\nfunc1- Yuvi");
 #define ADD5(int) {return a + 5};
 #define AND &&
 #define OR ||
@@ -32,8 +32,8 @@ void func1()
 
     x = add5(5);
     y = add5(100);
-    printf("\n%d", x);
-    printf("\n%d", y);
+    printf("\nfunc1- %d\t", x);
+    printf("\nfunc1- %d\t", y);
 }
 
 int add5(int a) { return a + 5; }
@@ -43,7 +43,7 @@ void func2()
     int f = 1, x = 4, y = 90;
 
     if ((f < 5) AND(x <= 20 OR y <= 45))
-        printf("\nYour PC will always work fine...");
+        printf("\nfunc2- Your PC will always work fine...\t");
 
     else
         printf("\nIn front of the maintenance man");
@@ -54,7 +54,7 @@ void func3()
 {
     int a = 30;
     if (ARANGE)
-        printf("\nwithin range");
+        printf("\nfunc3- within range\t");
     else
         printf("out of range");
 }
@@ -65,7 +65,7 @@ void func4()
     if (signature == 'Y')
         FOUND
     else
-        printf("\nSafe... as yet !");
+        printf("\nfunc4- Safe... as yet !\t");
 }
 
 
