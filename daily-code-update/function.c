@@ -58,5 +58,8 @@ void func4()
 
 void main()
 {
-
+    func1();
+    func2();
+    func3();
+    func4();
 }
