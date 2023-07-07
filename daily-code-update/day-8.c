@@ -1,7 +1,10 @@
+
 #include<stdio.h>
 #include<conio.h>
 
-//square of a number using function
+/*topic: return type of a functon
+ptoblem: square of a number using a function
+*/
 
 void main()
 {
