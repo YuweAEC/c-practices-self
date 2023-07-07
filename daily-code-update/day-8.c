@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<conio.h>
 
@@ -22,3 +21,4 @@ float square(float x)
     y = x * x;
     return (y);
 }
+
