@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<conio.h>
 
+//square of a number using function
+
 void main()
 {
     float a, b;
