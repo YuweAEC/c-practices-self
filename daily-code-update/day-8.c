@@ -6,6 +6,8 @@
 ptoblem: square of a number using a function
 */
 
+float square(float);
+
 void main()
 {
     float a, b;
@@ -14,7 +16,7 @@ void main()
     b = square(a);
     printf("\nSquare of %f is %f", a, b);
 }
-void square(float x)
+float square(float x)
 {
     float y;
     y = x * x;
