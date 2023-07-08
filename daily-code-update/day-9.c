@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
-
-/*void main()
+//simple code
+void main()
 {
     int i = 3;
     printf("\nAddress of i = %u", &i);
@@ -21,8 +21,8 @@ void main()
     printf("\nValue of i = %d", i);
     printf("\nValue of i = %d", *(&i));
     printf("\nValue of i = %d", *j);
-}*/
-
+}
+//storing pointer address into another pointer code
 void main()
 {
     int i = 3, *j, **k;
