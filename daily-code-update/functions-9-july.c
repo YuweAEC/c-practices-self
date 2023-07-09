@@ -10,10 +10,20 @@ void swapv(int , int);
 void main() 
 { 
     int a = 10, b = 20 ; 
+    int radius ; 
+    float area, perimeter ;     
     
     swapv( a, b ) ; 
     swapr( &a, &b ) ; 
+    areaperi ( radius, &area, &perimeter ) ; 
+    scanf ( "%d", &radius ) ; 
+    
     printf( "\na = %d b = %d", a, b ) ; 
+    printf ( "\nEnter radius of a circle " ) ; 
+    printf( "\na = %d b = %d", a, b ) ; 
+    printf ( "\nEnter radius of a circle " ) ; 
+    printf ( "Area = %f", area ) ; 
+    printf ( "\nPerimeter = %f", perimeter ) ; 
 }
 
 void swapv( int x, int y ) 
@@ -34,4 +44,13 @@ void swapr( int *x, int *y )
     t = *x ; 
     *x = *y ; 
     *y = t ; 
-} 
+}
+
+// to find area and perimeter of a circle
+
+void areaperi ( int r, float *a, float *p ) 
+{ 
+ *a = 3.14 * r * r ; 
+ *p = 2 * 3.14 * r ; 
+}
+
