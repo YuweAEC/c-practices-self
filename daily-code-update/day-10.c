@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<conio.h>
-
+/* sending value to the parameter ro argument 
+and the use call by value to swap and call the function inside main
+*/
 void swapv(int , int);
 
 void main() 
