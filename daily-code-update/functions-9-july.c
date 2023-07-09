@@ -5,7 +5,9 @@
 using call by value to swap and call the function inside main
 */
 
-void swapv(int , int);
+void swapv(int ,int);
+void swapr( int *x, int *y );
+void areaperi ( int r, float *a, float *p );
 
 void main() 
 { 
@@ -15,13 +17,13 @@ void main()
     
     swapv( a, b ) ; 
     swapr( &a, &b ) ; 
-    areaperi ( radius, &area, &perimeter ) ; 
-    scanf ( "%d", &radius ) ; 
     
     printf( "\na = %d b = %d", a, b ) ; 
+    
     printf ( "\nEnter radius of a circle " ) ; 
-    printf( "\na = %d b = %d", a, b ) ; 
-    printf ( "\nEnter radius of a circle " ) ; 
+    scanf ( "%d", &radius ) ; 
+    areaperi ( radius, &area, &perimeter ) ; 
+    
     printf ( "Area = %f", area ) ; 
     printf ( "\nPerimeter = %f", perimeter ) ; 
 }
@@ -39,7 +41,7 @@ void swapv( int x, int y )
 //using call by reference to swap and call the function inside main
 
 void swapr( int *x, int *y ) 
-{ 
+{
     int t ; 
     t = *x ; 
     *x = *y ; 
