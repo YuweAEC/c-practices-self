@@ -52,7 +52,7 @@ void swapr( int *x, int *y )
 
 void areaperi ( int r, float *a, float *p ) 
 { 
- *a = 3.14 * r * r ; 
- *p = 2 * 3.14 * r ; 
+    *a = 3.14 * r * r ; 
+    *p = 2 * 3.14 * r ; 
 }
 
