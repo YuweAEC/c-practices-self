@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 
-/* sending value to the parameter ro argument 
+/* sending value to the parameter 
 using call by value to swap and call the function inside main
 */
 
