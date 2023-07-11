@@ -8,24 +8,35 @@ using call by value to swap and call the function inside main
 void swapv(int ,int);
 void swapr( int *x, int *y );
 void areaperi ( int r, float *a, float *p );
+int stackRec( int i, int j );
 
 void main() 
 { 
     int a = 10, b = 20 ; 
+    int c = 5, d = 2, e ;
     int radius ; 
     float area, perimeter ;     
+    
+    printf ( "\n sum = %d", e ) ; 
+    e = stackRec( c, d ) ; 
     
     swapv( a, b ) ; 
     swapr( &a, &b ) ; 
     
     printf( "\na = %d b = %d", a, b ) ; 
     
-    printf ( "\nEnter radius of a circle " ) ; 
-    scanf ( "%d", &radius ) ; 
+    printf ( "\n Enter radius of a circle " ) ; 
+    scanf ( " %d", &radius ) ; 
     areaperi ( radius, &area, &perimeter ) ; 
     
-    printf ( "Area = %f", area ) ; 
-    printf ( "\nPerimeter = %f", perimeter ) ; 
+    printf ( " Area = %f", area ) ; 
+    printf ( "\n Perimeter = %f", perimeter ) ; 
+}
+int stackRec( int i, int j ) 
+{ 
+    int sum ; 
+    sum = i + j ; 
+    return sum ; 
 }
 
 void swapv( int x, int y ) 
@@ -55,4 +66,3 @@ void areaperi ( int r, float *a, float *p )
     *a = 3.14 * r * r ; 
     *p = 2 * 3.14 * r ; 
 }
-
