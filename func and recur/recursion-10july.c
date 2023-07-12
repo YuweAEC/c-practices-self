@@ -4,7 +4,7 @@
 //code for factorial using simple function
 
 int factorial ( int ); 
-int rec( int x ); 
+int factorialusingRec( int x ); 
 
 void main( ) 
 { 
@@ -12,7 +12,7 @@ void main( )
     printf ( "\nEnter any number " ) ; 
     scanf ( "%d", &a ) ; 
     fact1 = factorial ( a ) ; 
-    fact = rec ( a ) ; 
+    fact = factorialusingRec( a ) ; 
     printf ( "Factorial value = %d", fact ) ; 
 } 
 
@@ -26,12 +26,12 @@ int factorial ( int x )
 
 //code to find factorial using recursion
 
-int rec( int x ) 
+int factorialusingRec( int x ) 
 { 
     int f ; 
     if ( x == 1 ) 
     return ( 1 ) ; 
     else 
-    f = x * rec ( x - 1 ) ; 
+    f = x * factorialusingRec( x - 1 ) ; 
     return ( f ) ; 
 }
