@@ -32,6 +32,7 @@ void main()
     printf ( " Area = %f", area ) ; 
     printf ( "\n Perimeter = %f", perimeter ) ; 
 }
+
 int stackRec( int i, int j ) 
 { 
     int sum ; 
