@@ -1,4 +1,4 @@
-
+//this is a user defined function created to find factorila and this will be called in main functon 
 int header( int x ) 
 { 
     int f ; 
