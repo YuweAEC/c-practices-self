@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<header.h>
-
+//here we include the user defined function and invoke it in main function to find factorial of a number
 void main( ) 
 { 
     int a, fact ; 
