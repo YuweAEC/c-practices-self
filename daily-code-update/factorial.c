@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-#include<factorial.h>
+#include<fact.h>
 //here we include the user defined function and invoke it in main function to find factorial of a number
 void main( ) 
 { 
@@ -9,4 +9,4 @@ void main( )
     scanf ( "%d", &a ) ; 
     fact = header ( a ) ; 
     printf ( "Factorial value = %d", fact ) ; 
-} 
+}
