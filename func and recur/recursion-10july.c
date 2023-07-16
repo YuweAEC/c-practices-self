@@ -8,19 +8,22 @@ int factorialusingRec( int x );
 
 void main( ) 
 { 
-    int a, fact1, fact ; 
+    int a, fact, fact1 ;
+
     printf ( "\nEnter any number " ) ; 
     scanf ( "%d", &a ) ; 
     fact1 = factorial ( a ) ; 
-    fact = factorialusingRec( a ) ; 
+    fact = rec ( a ) ; 
     printf ( "Factorial value = %d", fact ) ; 
 } 
 
 int factorial ( int x ) 
 { 
     int f = 1, i ; 
+    
     for ( i = x ; i >= 1 ; i-- ) 
     f = f * i ; 
+    
     return ( f ) ; 
 }  
 
@@ -29,9 +32,11 @@ int factorial ( int x )
 int factorialusingRec( int x ) 
 { 
     int f ; 
+    
     if ( x == 1 ) 
     return ( 1 ) ; 
+    
     else 
-    f = x * factorialusingRec( x - 1 ) ; 
+    f = x * rec ( x - 1 ) ; 
     return ( f ) ; 
 }
