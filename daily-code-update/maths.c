@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include<conio.h>
 
+float addNumber(float a, float b);  // function prototype
+float subtractNumber(float a, float b); // function prototype
+float multiplyNumber(float a, float b); //  function prototype
+float divideNumber(float a, float b); // function prototype
+
 int main() 
 {
     float number1,number2;
@@ -10,7 +15,7 @@ int main()
     scanf("%f", &number1);
 
     printf("Enter the second number: ");
-    scanf("%f", number2);
+    scanf("%f", &number2);
 
     printf("Choose an operation:\n");
     printf("a. Addition\n");
@@ -70,7 +75,7 @@ float multiplyNumber(float a, float b)
 
 float divideNumber(float a, float b) 
 {
-    if (b == 0) 
+    if (b == 0) // if denominator is 0, show error message
     {
         printf("Error: Cannot divideNumber by zero\n");
         return 0;
