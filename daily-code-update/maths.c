@@ -26,7 +26,7 @@ int main() // Main function starts here
 
         switch (choice) // Switch case to perform the desired operation 
         {
-        case '1': // Use '1' instead of 'a' for addition
+        case '1': // prints 1 if choice is 1
             printf("Enter the first number: ");
             scanf("%f", &number1);
 
@@ -35,7 +35,7 @@ int main() // Main function starts here
 
             printf("Result: %f\n", addNumber(number1, number2));
             break;
-        case '2': // Use '2' instead of 'b' for subtraction
+        case '2': // prints the result of subtraction
             printf("Enter the first number: ");
             scanf("%f", &number1);
 
@@ -44,7 +44,7 @@ int main() // Main function starts here
 
             printf("Result: %f\n", subtractNumber(number1, number2));
             break;
-        case '3': // Use '3'  for division
+        case '3': // prints the result of division
             printf("Enter the numerator: ");
             scanf("%f", &number1);
 
@@ -53,7 +53,7 @@ int main() // Main function starts here
 
             printf("Result: %f\n", divideNumber(number1, number2));
             break;
-        case '4': // Use '4' for multiplication
+        case '4': // prints the result of multiplication
             printf("Enter the first number: ");
             scanf("%f", &number1);
 
@@ -64,7 +64,7 @@ int main() // Main function starts here
             break;
         case '5':
             printf("Exiting the program.\n");
-            return 0;
+            return 0; // Return 0 to indicate successful termination of program
         default:
             printf("Invalid choice\n");
             break;
