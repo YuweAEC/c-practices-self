@@ -1,83 +1,80 @@
-#include <stdio.h>
+#include<stdio.h>
 #include<conio.h>
 
-float addNumber(float a, float b);  // function prototype
-float subtractNumber(float a, float b); // function prototype
-float multiplyNumber(float a, float b); //  function prototype
-float divideNumber(float a, float b); // function prototype
+float addNumber(float a, float b);
+float subtractNumber(float a, float b);
+float multiplyNumber(float a, float b);
+float divideNumber(float a, float b);
 
-int main() 
+int main() // Main function of the program starts here
 {
-    float number1,number2;
+    float number1, number2;
     char choice;
 
-    printf("Enter the first number: ");
-    scanf("%f", &number1);
-
-    printf("Enter the second number: ");
-    scanf("%f", &number2);
-
-    printf("Choose an operation:\n");
-    printf("a. Addition\n");
-    printf("b. Subtraction\n");
-    printf("c. Division\n");
-    printf("d. Multiplication\n");
-
-    printf("Enter choice (a/b/c/d): "); // ask user to enter choice
-    scanf(" %c", &choice); // read the choice
-
-    //menu driven program using switch case
-
-    switch (choice) // switch statement to perform addition, subtraction, multiplication and division based on choice entered by user
+    while (1) // Infinite loop to run the program until user exits the program using option 5 from the menu
     {
-        case 'a':  // addition
-            printf("Result: %f\n", addNumber(number1,number2));
-            break;      // break out of switch statement
-        case 'b':  // subtraction
-            printf("Result: %f\n", subtractNumber(number1,number2));
+        printf("Enter the first number: ");
+        scanf("%f", &number1);
+
+        printf("Enter the second number: ");
+        scanf("%f", &number2);
+
+        printf("Choose an operation:\n");
+        printf("1. Addition\n");
+        printf("2. Subtraction\n");
+        printf("3. Division\n");
+        printf("4. Multiplication\n");
+        printf("5. Exit\n");
+
+        printf("Enter choice (1/2/3/4/5): ");   
+        scanf(" %c", &choice); // Note the space before %c. This is to clear the input buffer (clear the newline character)
+
+        switch (choice) // Switch case to perform the operation based on user input from the menu
+        {
+        case 'a':
+            printf("Result: %f\n", addNumber(number1, number2));
             break;
-        case 'c': // division
-            printf("Result: %f\n", divideNumber(number1,number2));
+        case 'b':
+            printf("Result: %f\n", subtractNumber(number1, number2));
             break;
-        case 'd': //    multiplication
-            printf("Result: %f\n", multiplyNumber(number1,number2));
+        case 'c':
+            printf("Result: %f\n", divideNumber(number1, number2));
             break;
-        default: // invalid choice
+        case 'd':
+            printf("Result: %f\n", multiplyNumber(number1, number2));
+            break;
+        case 'e':
+            printf("Exiting the program.\n");
+            return 0; // Return 0 to exit the program
+        default:
             printf("Invalid choice\n");
-            break;
+            break; // Break statement to break out of the switch case
+        }
     }
-    return 0; // return 0 to operating system
+
+    return 0; // Return 0 to exit the program
 }
 
-// Function to addNumber two numbers
-
-float addNumber(float a, float b) 
+float addNumber(float a, float b)
 {
     return a + b;
 }
 
-// Function to subtractNumber two numbers
-
-float subtractNumber(float a, float b) 
+float subtractNumber(float a, float b)
 {
     return a - b;
 }
 
-
-// Function to multiplyNumber two numbers
-
-float multiplyNumber(float a, float b) 
+float multiplyNumber(float a, float b)
 {
     return a * b;
 }
 
-// Function to divideNumber two numbers
-
-float divideNumber(float a, float b) 
+float divideNumber(float a, float b)
 {
-    if (b == 0) // if denominator is 0, show error message
+    if (b == 0)
     {
-        printf("Error: Cannot divideNumber by zero\n");
+        printf("Error: Cannot divide by zero\n");
         return 0;
     }
     return a / b;
