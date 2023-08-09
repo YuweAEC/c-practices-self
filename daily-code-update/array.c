@@ -2,10 +2,12 @@
 #include<conio.h>
 
 int average();
+int callByValue();
 
-int main( ) 
+int main() 
 { 
     average();
+    callByValue();
 }
 
 int average()
@@ -25,4 +27,18 @@ int average()
     avg = sum / 6 ; 
     
     printf ( "\nAverage marks = %d", avg ) ; 
+}
+
+/* Demonstration of call by value */
+
+int callByValue()
+{ 
+    int i ; 
+    int marks[ ] = { 55, 65, 75, 56, 78, 78, 90 } ; 
+    for ( i = 0 ; i <= 6 ; i++ ) 
+    display ( marks[i] ) ; 
+} 
+display ( int m ) 
+{ 
+    printf ( "%d ", m ) ; 
 }
