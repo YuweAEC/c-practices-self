@@ -4,11 +4,26 @@
 int average();
 int callByValue();
 
-int main() 
-{ 
-    average();
-    callByValue();
+int main()
+{
+    int choice;
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+    switch(choice)
+    {
+        case 1:
+            average();
+            break;
+        case 2:
+            callByValue();
+            break;
+        default:
+            printf("Invalid choice");
+    }
+    return 0;
 }
+
+// Demonstration of array
 
 int average()
 { 
