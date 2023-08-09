@@ -1,7 +1,14 @@
 #include<stdio.h>
 #include<conio.h>
 
+int average();
+
 int main( ) 
+{ 
+    average();
+}
+
+int average()
 { 
     int avg, sum = 0 ; 
     int i ; 
