@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 
-int display( ); 
+int display( ); // prototype declare
 
 int main( ) 
 { 
@@ -11,7 +11,7 @@ int main( )
     display( &marks[i] ) ; 
 } 
 
-int display( int *n ) 
+int display( int *n ) // function invocation
 { 
     printf ( "%d ", *n ) ; 
 } 
