@@ -4,7 +4,7 @@
 int display( ); // prototype declare
 int pointersAndArrays( ); // prototype declare 
 int pointerVariables( ); // prototype declare
-
+int memoryLocation( ); // prototype declare
 int main( ) 
 { 
     int i ; 
@@ -13,6 +13,7 @@ int main( )
     display( &marks[i] ) ;  // function call
     pointersAndArrays( ); // function call 
     pointerVariables( ); // function call
+    memoryLocation( ); // function call 
 } 
 
 int display( int *n ) // function invocation
@@ -50,7 +51,19 @@ int pointerVariables( )
     j = &arr [ 4 ] ; 
     k = ( arr + 4 ) ; 
     if ( j == k ) 
-    printf ( "\nThe two pointers point to the same location" ) ; 
+    printf ( "\n\n\nThe two pointers point to the same location" ) ; 
     else 
-    printf ( "\nThe two pointers do not point to the same location" ) ; 
+    printf ( "\n\n\nThe two pointers do not point to the same location" ) ; 
 }
+
+
+int memoryLocation( ) 
+{ 
+    int num[ ] = { 24, 34, 12, 44, 56, 17 } ; 
+    int i ; 
+    for ( i = 0 ; i <= 5 ; i++ ) 
+    { 
+    printf ( "\n\n\nelement no. %d ", i ) ; 
+    printf ( "address = %u", &num[i] ) ; 
+    } 
+} 
