@@ -35,3 +35,4 @@ int arrayElement( )
         j++ ; /* increment pointer to point to next location */ 
     } 
 }
+
