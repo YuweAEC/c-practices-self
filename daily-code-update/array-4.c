@@ -26,7 +26,7 @@ int display( int *j, int n )
     
     for ( i = 0 ; i <= n - 1 ; i++ ) 
     { 
-        printf ( "\nelement = %d", *j ) ;
+        printf ( "\n\nelement = %d", *j ) ;
         j++ ; /* increment pointer to point to next element */ 
     } 
 } 
