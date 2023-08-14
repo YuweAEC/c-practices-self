@@ -4,51 +4,20 @@
 
 // Function prototypes
 
-void demonstrateArray();
-void demonstrateCallByValue();
-void displayValue(int value);
+void arrayAverage();
+void callbyValue();
+void displayValue(int);
 
 int main()
 {
-    int choice;
-    
-    while (1)
-    {
-        printf("\nEnter your choice:\n");
-        printf("1. Demonstrate Array\n");
-        printf("2. Demonstrate Call By Value\n");
-        printf("3. Display Value\n");
-        printf("4. Exit\n");
-        scanf("\n%d", &choice);
-
-        switch (choice)
-        {
-            case 1:
-                demonstrateArray();
-                break;
-            case 2:
-                demonstrateCallByValue();
-                break;
-            case 3:
-                int value;
-                printf("Enter a value: ");
-                scanf("%d", &value);
-                displayValue(value);
-                break;
-            case 4:
-                printf("Exiting...\n");
-                return 0;
-            default:
-                printf("Invalid choice\n");
-        }
-    }
-
+    arrayAverage();
+    callbyValue();
     return 0;
 }
 
 // Demonstration of array
 
-void demonstrateArray()
+void arrayAverage()
 {
     int avg, sum = 0;
     int i;
@@ -70,7 +39,7 @@ void demonstrateArray()
 
 // Demonstration of call by value
 
-void demonstrateCallByValue()
+void callbyValue()
 {
     int i;
     int marks[] = {55, 65, 75, 56, 78, 78, 90};
@@ -79,9 +48,7 @@ void demonstrateCallByValue()
         displayValue(marks[i]);
 }
 
-// Display function definition
-
-void displayValue(int value)
+void displayValue(int n)
 {
-    printf("%d ", value);
+    printf("%d\t", n);
 }
