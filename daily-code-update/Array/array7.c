@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 
-int pointerArray();
+void pointerArray();
 
 int main ()
 {
@@ -10,7 +10,7 @@ int main ()
 }
 /* Usage of pointer to an array */ 
 
-int pointerArray( ) 
+void pointerArray( ) 
 { 
     int s[5][2] = 
     { 
