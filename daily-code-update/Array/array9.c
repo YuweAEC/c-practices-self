@@ -2,10 +2,12 @@
 #include<conio.h>
 
 void intPointers( ) ;
+void stringArray( ) ;
 
 int main()
 {
     intPointers();
+    stringArray();
     return 0;
 }
 
@@ -19,6 +21,14 @@ void intPointers( )
     arr[2] = &k ; 
     arr[3] = &l ; 
     
-    for ( m = 0 ; m <= 3 ; m++ ) 
-        printf ( "%d ", * ( arr[m] ) ) ; 
+    for ( m = 0 ; m <= 3 ; m++ ) // 1-D array traversal 
+        printf ( "%d ", * ( arr[m] ) ) ;  // print value of arr[m] 
 } 
+
+/* Array of pointers to strings */
+void stringArray( ) 
+{ 
+    static int a[ ] = { 0, 1, 2, 3, 4 } ; 
+    int *p[ ] = { a, a + 1, a + 2, a + 3, a + 4 } ; 
+    printf ( "\n%u %u %d", p, *p, * ( *p ) ) ; 
+}
