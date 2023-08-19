@@ -25,7 +25,8 @@ void intPointers( )
         printf ( "%d ", * ( arr[m] ) ) ;  // print value of arr[m] 
 } 
 
-/* Array of pointers to strings */
+/* print the value of string array */
+
 void stringArray( ) 
 { 
     static int a[ ] = { 0, 1, 2, 3, 4 } ; 
