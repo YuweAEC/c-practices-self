@@ -13,7 +13,6 @@ int main()
 
 void intPointers( ) 
 { 
-    int *arr[4] ; /* array of integer pointers */ 
     int i = 31, j = 5, k = 19, l = 71, m ; 
     
     arr[0] = &i ; 
