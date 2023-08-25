@@ -1,10 +1,5 @@
 #include <stdio.h>
 #include<conio.h>
-#include<stdlib.h>
-
-/* write a program to read and display the information of 100 books using an array of structures */
-
-void arrayStructures( ); // function prototype 
 
 int main()
 {
@@ -37,4 +32,4 @@ void linkfloat( )
     float a = 0, *b ; 
     b = &a ; /* cause emulator to be linked */ 
     a = *b ; /* suppress the warning - variable not used */ 
-} 
+}
