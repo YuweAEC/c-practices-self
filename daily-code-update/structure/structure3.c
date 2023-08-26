@@ -7,12 +7,15 @@
 
 void structure( ); // function prototype
 void nestedStructure( );
+void structurePass( );
 
 int main()
 {
     structure();
+    structurePass();
     nestedStructure();
-    return 0;}
+    return 0;
+}
 
 void structure( ) 
 { 
@@ -55,3 +58,24 @@ void nestedStructure( )
     printf ( "\nname = %s phone = %s", e.name, e.a.phone ) ; 
     printf ( "\ncity = %s pin = %d", e.a.city, e.a.pin ) ; 
 } 
+
+/* Passing individual structure elements */ 
+void structurePass( ) 
+{ 
+    struct book 
+    { 
+        char name[25] ; 
+        char author[25] ; 
+        int callno ; 
+    } ; 
+
+    struct book b1 = { "Let us C", "YPK", 101 } ; 
+    
+    display ( b1.name, b1.author, b1.callno ) ; 
+    } 
+        display ( char *s, char *t, int n ) 
+    { 
+    
+    printf ( "\n%s %s %d", s, t, n ) ; 
+} 
+
