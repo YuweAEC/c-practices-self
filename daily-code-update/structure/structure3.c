@@ -7,12 +7,12 @@
 
 void structure( ); // function prototype
 void nestedStructure( );
-void structurePass( );
+void individualStructure( );
 
 int main()
 {
     structure();
-    structurePass();
+    individualStructure();
     nestedStructure();
     return 0;
 }
@@ -60,7 +60,7 @@ void nestedStructure( )
 } 
 
 /* Passing individual structure elements */ 
-void structurePass( ) 
+void individualStructure( ) // program to pass individual structure elements to a function
 { 
     struct book 
     { 
