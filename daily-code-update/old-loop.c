@@ -21,8 +21,8 @@ void squareFor( )
     
     for ( ; another == 'y' ; ) 
     { 
-        printf("using for loop");
-        printf( "Enter a number " ) ; 
+        printf("using for loop:-");
+        printf( "\nEnter a number " ) ; 
         scanf ( "%d", &num ) ; 
         printf ( "square of %d is %d", num, num * num ) ; 
         printf ( "\nWant to enter another number y/n " ) ; 
@@ -40,8 +40,8 @@ void squareWhile( )
     
     while ( another == 'y' ) 
     { 
-        printf("using while loop");
-        printf ( "Enter a number " ) ; 
+        printf("using while loop:-");
+        printf ( "\nEnter a number " ) ; 
         scanf ( "%d", &num ) ; 
         printf ( "square of %d is %d", num, num * num ) ; 
         printf ( "\nWant to enter another number y/n " ) ; 
