@@ -3,7 +3,7 @@
 #include<stdlib.h>
 
 /* odd loop using a for loop */ 
-// program to print the square of a number entered by the user.
+// program to print the square of a number entered by the user by for loop.
 
 void squareFor();
 void squareWhile();
@@ -31,6 +31,7 @@ void squareFor( )
 } 
 
 /* odd loop using a while loop */ 
+// rpogram to print the square of a number entered by the user by while loop.
 
 void squareWhile( ) 
 { 
