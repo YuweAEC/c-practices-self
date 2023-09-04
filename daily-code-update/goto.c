@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
-
+// program to print the square of a number entered by the user. 
 void gotoKeyword();
 void gotoOut();
 
