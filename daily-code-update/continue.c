@@ -11,8 +11,8 @@ int main()
     continueState();
     return 0;
 }
-
-void continueState( ) 
+// swap numbers using continue statement.
+void continueState( )
 { 
     int i, j ; 
     for ( i = 1 ; i <= 2 ; i++ ) 
