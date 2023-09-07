@@ -11,7 +11,7 @@ int main()
     stringPointers();
     return 0;
 }
-
+// program  to illustrate the use of pointers with arrays and strings.  
 void arrayPointers( ) 
 { 
     char name[ ] = "Klinsman" ; 
