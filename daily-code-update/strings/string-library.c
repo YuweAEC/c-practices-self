@@ -15,7 +15,7 @@ int main( )
 }
 */
 
-/* using user defined */ 
+/* using user defined string length function */ 
 
 int lengthString(const char *s);
 
