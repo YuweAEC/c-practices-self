@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<conio.h>
 #include<string.h>
-
+// program to illustrate the use of string library functions.
 int main( ) 
 { 
     char arr[ ] = "Bamboozled" ; 
