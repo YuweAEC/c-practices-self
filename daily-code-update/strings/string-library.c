@@ -39,3 +39,4 @@ int lengthString(const char *s)
     } 
     printf("\nLength = %d", length); 
 }
+
