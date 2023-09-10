@@ -54,7 +54,9 @@ int lengthString(const char *s)
     } 
     printf("\nLength = %d", length); 
 }
+
 // using user defined string copy function 
+
 int stringCopy( char *t, char *s ) 
 { 
     while ( *s != '\0' ) 
