@@ -14,7 +14,7 @@ int main()
 // program  to illustrate the use of pointers with arrays and strings.  
 void arrayPointers( ) 
 { 
-    char name[ ] = "Klinsman" ; 
+    char name[ ] = "Yuvraj Singh" ; 
     char *ptr ; 
     
     ptr = name ; /* store base address of string */ 
@@ -29,7 +29,7 @@ void arrayPointers( )
 void stringPointers( ) 
 { 
     char str1[ ] = "Hello" ; 
-    char str2[10] ; 
+    char str2[20] ; 
     char *s = "Good Morning" ; 
     char *q ; 
     q = s ; /* works */ 
