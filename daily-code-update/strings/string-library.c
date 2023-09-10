@@ -13,6 +13,15 @@ int main( )
     printf ( "\nstring = %s length = %d", arr, len1 ) ; 
     printf ( "\nstring = %s length = %d", "Humpty Dumpty", len2 ) ; 
 }
+
+int main( ) 
+{ 
+    char source[ ] = "Sayonara" ; 
+    char target[20] ; 
+    strcpy ( target, source ) ; 
+    printf ( "\nsource string = %s", source ) ; 
+    printf ( "\ntarget string = %s", target ) ; 
+}
 */
 
 /* using user defined string length function */ 
