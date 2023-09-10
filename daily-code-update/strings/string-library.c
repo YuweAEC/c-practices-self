@@ -23,7 +23,7 @@ int main( )
     printf ( "\ntarget string = %s", target ) ; 
 }
 
-main( ) 
+main( )  // program to illustrate the use of strcat ( )
 { 
     char source[ ] = "Folks!" ; 
     char target[30] = "Hello" ; 
