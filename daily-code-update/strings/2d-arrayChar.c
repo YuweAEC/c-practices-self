@@ -4,7 +4,8 @@
 #include<string.h>
 #define FOUND 1 
 #define NOTFOUND 0
-
+// program to illustrate the use of pointers with arrays and strings.
+// to print the name of the person who is allowed to enter the palace with the help of 2d array of characters and strcmp() function.
 void characterArray();
 
 int main()
