@@ -22,4 +22,3 @@ This repository contains practice programs and codes for honing C programming sk
 ## Acknowledgements
 
 - **Gaurav Singh**
-
